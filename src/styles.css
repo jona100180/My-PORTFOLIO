@@ -4,10 +4,7 @@ body {
 
 
 section { 
-        height: 500px;
-        background-color: white;
-        border: solid black 1px;
-
+        background-color: rgb(233, 221, 205);
 }
 
 .hero {
@@ -20,8 +17,10 @@ section {
 
 
 footer{
-    height: 500px;
+    padding: 80px;
     background-color: black;
+    color: white;
+    text-align: center;
 }
 
 
@@ -39,6 +38,9 @@ ul {
     font-size: 30px;
 }
 
+ul.show{
+    display: block;
+}
 
 li {
     /* width: 200px: */
@@ -52,11 +54,24 @@ h1 {
 }
 
 
+h2{
+    font-size: 50px;
+}
+
+
+
 p {
     margin: 0;
     font-size: 30px;
     font-weight: 300;
 }
+
+
+.subtext{
+    font-size: 20px;
+    font-weight: 300;
+}
+
 
 .hero-area{
     display: flex;
@@ -88,7 +103,7 @@ p {
 
 
 .button:hover {
-    background-color: rgb(230, 130, 130);   
+    background-color: rgb(89, 228, 96);   
 }
 
 
@@ -96,6 +111,10 @@ p {
     background-color: darkgrey solid;
     color: green;
 
+}
+
+.my resume:hover{
+    background-color: rgb(161, 120, 29);
 }
 
 
@@ -117,4 +136,114 @@ p {
 .subsection {
     display: flex;
     justify-content: space-around;
+    padding: 80px;
+}
+
+
+.subsection-alternative{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 80px;
+
+}
+
+
+
+.image{
+    width: 300px;  
+    border-radius: 150px;  
+}
+
+
+.image-container{
+    display: flex;
+    align-items: center;
+}
+
+
+.prajek{
+    width: 400px;
+    height: 503px;
+    box-shadow: 5px 5px 20px rgb(170, 127, 71);
+    margin: 10px;
+}
+
+
+.prajek-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .prajek-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+
+.pimage{
+    width: 300px;
+    border-radius: 40px;
+    margin-top: 25px;
+}
+
+hr{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.project-link{
+    text-decoration: bold;
+    color: rgb(43, 17, 2);  
+}
+
+
+a{
+    text-decoration: none;
+    color: white;  
+}
+
+
+.hamburger {
+    display: none;
+}
+
+.hamburger:focus{
+    outline: 0;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .hamburger {
+        display: block;
+        border: 0;
+        background-color: transparent;
+        color: white;
+        font-size: 30px;
+        margin: 20px;
+        align-self: flex-end;
+    }
+
+    ul {
+        display: none;
+        background-color: #2b2c38;
+        margin: 0ppx;
+    }
+
+    ul.show {
+        display: block;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: #2b2c38;
+    }
+
+    .logo {
+        display: none;
+    }
 }

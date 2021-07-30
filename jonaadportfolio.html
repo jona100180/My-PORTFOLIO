@@ -1,29 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="eng">
     <head>
+
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale-1.0">
         <link rel="stylesheet" type="text/css" href="src/styles.css"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;0,800;1,600&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;0,800;1,600&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/761e4c8e5c.js" crossorigin="anonymous"></script>
         <title>J.A.PORTFOLIO</title>
-        <meta charset="UTF-8" />
+        
     </head>
-   <body>
+     <body>
+
+
        <section class="hero">
            <nav>
                <img class="logo" src="pictures/piktyurlogo.png" alt="JSA Logo"/> 
-               <ul>     
-                    <li>About Me</li>
-                    <li>Projects</li>
-                    <li>Contact me</li>
+               <ul id="nav-list">     
+                    <li><a href="#about me">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact me">Contact Me</a></li>
              </ul>
+
+             <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+
+
            </nav>
+
            <div class="hero-area"> 
+
              <div class="hero-text">
              <h1>JONALYN ADRES</h1>
-             <p>Full Stack Web Developer</p>
-             <div class="button">About me</div>
+             <p>RPM & Front-end Web Developer</p>
+             <div class="button"><a href="#about me">About me</a></div>
              </div>
              <div class="socmedia"> 
                 <div><a href="https://www.linkedin.com/in/jonalyn-adres/" class="socmedia">
@@ -46,14 +60,56 @@
            </div>
        </section>
       
-       <section class="subsection">
+       <section class="subsection" id="about me">
            <div class="infos">
-                <h2>About me</h2>
-                <p>Hi! I'm Jonalyn Adres. I am a front-end website developer.</p>
+                <h2>About me</h2> 
+                <p>I'm Jonalyn Adres. I'm a Remote Property Manager and a Front-end Website Developer. I am a jill that can do alot of things and would want to use all of my time productively. I could work fairly independently and can manage multiple task in a fast-paced changing environment.</p>
+                <br>  
+                <a href="https://github.com/jona100180">My Resume</a>
+
+           </div>
+           <div class="image-container">
+               <img class="image" src="pictures/pngpik.png" alt="jonapic"/>
            </div>
        </section>
-       <section class="subsection"></section>
-       <footer></footer>
+       <section class="subsection-alternative" id="projects">
+           <h2>Projects</h2>
+           <div class="prajek-container">
+           <div class="prajek">
+               <img class="pimage" src="pictures/p1.png" alt="P1"/>
+               <h3>Project1</h3>
+               <p class="subtext">A little peek on one of my project an online magazine entitled "DigiLife</p>
+                <hr/>
+                <p class="subtext"><a class="project-link" href="https://github.com/jona100180">View here</a></p>
+            </div>
+           
+            <div class="prajek">
+                <img class="pimage" src="pictures/p2.png" alt="P2"/>
+                <h3>Project2</h3>
+                <p class="subtext">Another project which is an outsourcing website by Dot Logix Company</p>
+                 <hr/>
+                 <p class="subtext"><a class="project-link" href="https://kabayan-global.com/">View here</a></p>
+             </div>
+
+             <div class="prajek">
+                <img class="pimage" src="pictures/p3.png" alt="P3"/>
+                <h3>Project3</h3>
+                <p class="subtext">A short glance on one of my current project, soon to be publish. An Immigration Consultancy Business Page.</p>
+                 <hr/>
+                 <p class="subtext"><a class="project-link" href="https://kabayan-global.com/">View here</a></p>
+             </div>
+
+           </div>
+       </section>
+       <footer id="contact me">
+           <h2>Contact me</h2>
+           <p><form action="https://formsubmit.co/jona.adres@gmail.com" method="POST">
+            <input type="email" name="email" placeholder="Email Address" required>
+            <input type="text" name="name" required>
+            <input type="email" name="email" required>
+            <button type="submit">Send</button>
+       </form></p>
+       </footer>
     <script src="src/style.js"></script>   
     </body>
 </html>
