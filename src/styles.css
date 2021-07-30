@@ -113,7 +113,7 @@ p {
 
 }
 
-.my resume:hover{
+.my-resume:hover{
     background-color: rgb(161, 120, 29);
 }
 
@@ -156,10 +156,13 @@ p {
 }
 
 
+
+
 .image-container{
     display: flex;
     align-items: center;
 }
+
 
 
 .prajek{
